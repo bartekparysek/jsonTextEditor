@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles.css">
+	<script src="https://use.fontawesome.com/fda0a386c4.js"></script>
+	<title>JSON Text Editor</title>
+</head>
+
+<body>
+	<nav>
+		<h2>JSON Text Editor</h2>
+
+		<div class="file__manager">
+			<form class="form" id="uploadForm">
+				<div class="add__file">
+					<label for="file__select" class="file__btn">Choose a file</label>
+					<input type="file" id="file__select" name="fileUplo" accept=".JSON">
+				</div>
+				<button type="submit" id="file__upload">Upload</button>
+			</form>
+
+		</div>
+	</nav>
+	<div class="text__editor">
+		<div class="tools">
+			<ol class="fa-ul " id="toolbar">
+				<li class="toolbar__tool bold "><span class="fa-li"><i class="fa fa-bold fa-lg"
+							aria-hidden="true"></i></span>
+				</li>
+				<li class="toolbar__tool italic"><span class="fa-li"><i class="fa fa-italic fa-lg"
+							aria-hidden="true"></i></span>
+				</li>
+				<li class="toolbar__tool list"><span class="fa-li"><i class="fa fa-list fa-lg"
+							aria-hidden="true"></i></span></li>
+			</ol>
+		</div>
+		<iframe id="editor"></iframe>
+		<div class="file__export">
+			<button type="submit" id="file__export">Export JSON</button>
+		</div>
+	</div>
+
+	<script src="./index.js"></script>
+</body>
+
+</!DOCTYPE>
